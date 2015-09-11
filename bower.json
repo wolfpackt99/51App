@@ -1,0 +1,14 @@
+{
+  "name": "51-app",
+  "version": "0.0.0",
+  "private": true,
+  "dependencies": {
+    "angular": "1.x",
+    "angular-momentjs": "~0.2.2",
+    "angular-resource": "~1.4.5",
+    "angular-route": "1.x",
+    "bootstrap": "3.x",
+    "font-awesome": "4.2",
+    "mobile-angular-ui": "1.2.x"
+  }
+}

@@ -1,0 +1,21 @@
+<section class="section container-fluid">
+
+    <div class="scrollable">
+
+
+        <div class="scrollable-content section">
+            <ul class="list-group">
+                <li ng-repeat="cal in vm.feeds" class="list-group-item"><a href="{{cal.link}}">{{cal.title}}</a><span class='pull-right'>{{cal.publishedDate | date:'MM/dd/yyyy' }}</span><br/>
+                {{cal.author}}</li>
+            </ul>
+        </div>
+
+        <ui-state id="activeTab" default="1"></ui-state>
+        <div class="btn-group justified nav-tabs ">
+            <a href="#" ui-set="{'activeTab': 1}" ui-class="{'active': activeTab == 1}" class="btn btn-default active">Page 1</a>
+            <a href="#" ui-set="{'activeTab': 2}" ui-class="{'active': activeTab == 2}" class="btn btn-default">Page 2</a>
+            <a href="#" ui-set="{'activeTab': 3}" ui-class="{'active': activeTab == 3}" class="btn btn-default">Page 3</a>
+        </div>
+    </div>
+
+</section>
