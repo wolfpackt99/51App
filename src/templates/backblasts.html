@@ -5,8 +5,8 @@
 
         <div class="scrollable-content section">
             <ul class="list-group">
-                <li ng-repeat="cal in vm.feeds" class="list-group-item"><a href="{{cal.link}}">{{cal.title}}</a><span class='pull-right'>{{cal.publishedDate | date:'MM/dd/yyyy' }}</span><br/>
-                {{cal.author}}</li>
+                <li ng-repeat="bb in vm.feeds" class="list-group-item"><a href="{{bb.Url}}">{{bb.Title}}</a><span class='pull-right'>{{bb.Date | date:'MM/dd/yyyy' }}</span><br/>
+                {{bb.Author}}</li>
             </ul>
         </div>
 
